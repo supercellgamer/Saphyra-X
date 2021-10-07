@@ -1,4 +1,4 @@
-local VERSION = "v4.06"
+local VERSION = "v1"
 local rainbowvalue = 0
 local cam = game:GetService("Workspace").CurrentCamera
 local getasset = getsynasset or getcustomasset
@@ -21,10 +21,10 @@ local api = {
 }
 
 local function GetURL(scripturl)
-	if shared.VapeDeveloper then
-		return readfile("vape/"..scripturl)
+	if shared.SaphyraDeveloper then
+		return readfile("saphyra/"..scripturl)
 	else
-		return game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/"..scripturl, true)
+		return game:HttpGet("https://raw.githubusercontent.com/supercellgamer/Saphyra-X/main/"..scripturl, true)
 	end
 end
 
